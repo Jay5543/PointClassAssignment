@@ -1,34 +1,34 @@
 package org.WalkerCC_CompSci;
 
-public class Main {
+class Point {
+    private double x = 0;
+    private double y = 0;
 
-    public static void main(String[] args) {
+    public Point(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
 
-        //Create a point
-        Point a = new Point(3,5);
-        //Create another point
-        Point b = new Point(-2, 7);
+    public double getX() {
+        return this.x;
+    }
 
+    public double getY() {
+        return this.y;
+    }
 
-        double x_coordinate = a.getX();
-        double y_coordinate = a.getY();
+    public void FlipVertical() {
+        this.x = this.x * -1;
+    }
 
-        b.FlipVertical();
+    public void FlipHorizontal() {
+        this.x = this.x * -1;
+    }
 
-        System.out.println("Point b's new x-coordinate is " + b.getX());
-        System.out.println("Point b's new y-coordinate is " + b.getY());
-
-        b.FlipHorizontal();
-
-        System.out.println("Point b's new x-coordinate is " + b.getX());
-        System.out.println("Point b's new y-coordinate is " + b.getY());
-
-        a.Translate(2, -1);
-
-        System.out.println("Point a's new x-coordinate is " + a.getX());
-        System.out.println("Point a's new y-coordinate is " + a.getY());
-
-
+    public void Translate(double xChange, double yChange){
+        this.x = this.x + xChange;
+        this.y = this.y + yChange;
 
     }
+
 }
