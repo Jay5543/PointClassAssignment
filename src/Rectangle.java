@@ -1,9 +1,7 @@
 import java.awt.*;
 
-public class Rectangle
-{
-    public static void main(String[] args)
-    {
+public class Rectangle {
+    public static void main(String[] args) {
         Rectangle rectangle1 = new Rectangle(2, 4);
         square.Square square1 = new square.Square(3);
 
@@ -28,7 +26,10 @@ public class Rectangle
     }
 
     private String getWidth() {
+        return getWidth();
     }
 
     private String getLength() {
+        return getLength();
     }
+}
